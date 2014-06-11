@@ -1,0 +1,7 @@
+[
+  {"email":"bil@aol.com", "password":"1234", "_id":"0123456789abcdef01234567"},
+  {"email":"sue@aol.com", "password":"5678", "_id":"0123456789abcdef01234568"},
+  {"email":"sam@aol.com", "password":"90ab"},
+  {"email":"amy@aol.com", "password":"cdef"},
+  {"email":"cat@aol.com", "password":"ghij"}
+]

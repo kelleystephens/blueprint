@@ -1,0 +1,7 @@
+[
+  {"_id":"c123456789abcdef01234567", "name":"castle", "x":"3", "y":"5", "locationId":"a123456789abcdef01234567", "userId":"0123456789abcdef01234567"},
+  {"_id":"c123456789abcdef01234568", "name":"dungeon", "x":"4", "y":"6", "locationId":"a123456789abcdef01234568", "userId":"0123456789abcdef01234567"},
+  {"_id":"c123456789abcdef01234569", "name":"ranch", "x":"5", "y":"7", "locationId":"a123456789abcdef01234567", "userId":"0123456789abcdef01234568"},
+  {"_id":"c123456789abcdef0123456a", "name":"mc-mansion", "x":"6", "y":"8", "locationId":"a123456789abcdef01234568", "userId":"0123456789abcdef01234568"},
+  {"_id":"c123456789abcdef0123456b", "name":"crypt", "x":"7", "y":"9", "locationId":"a123456789abcdef01234567", "userId":"0123456789abcdef01234568"}
+]

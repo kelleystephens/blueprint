@@ -1,0 +1,25 @@
+extends ../shared/template
+
+block content
+  h1= title
+  h2 $#{rate.toFixed(2)}
+
+  button#create-room Create Room
+  button#save-room Save Room
+  input#name(type='text')
+
+  select#floors
+    option Select a Floor
+    each floor in floors
+      option(data-img=floor.photo, value=floor._id)= floor.name
+
+  table#building(data-id=bldg._id.toString())
+    tbody
+      - for(var y=0; y < bldg.y; y++)
+          tr
+            - for(var x=0; x < bldg.x; x++)
+                td.cell(data-x=x, data-y=y)
+
+block scripts
+  script.
+    var building = !{JSON.stringify(bldg)};

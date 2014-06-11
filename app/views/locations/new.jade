@@ -1,0 +1,9 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  form(action='/locations', method='post')
+    input(type='text', name='name')
+    input(type='number', name='rate')
+    button Save

@@ -1,0 +1,9 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  ul
+    each floor in floors
+      li= floor.name
+      li: img(src=floor.photo, style='width:50px; height:50px;')

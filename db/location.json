@@ -1,0 +1,7 @@
+[
+  {"name":"Mountain",  "rate":"7.00",  "_id":"a123456789abcdef01234567"},
+  {"name":"Lake",      "rate":"86.11", "_id":"a123456789abcdef01234568"},
+  {"name":"Ocean",     "rate":"56.39"},
+  {"name":"Valley",    "rate":"98.22"},
+  {"name":"Manhattan", "rate":"100.55"}
+]

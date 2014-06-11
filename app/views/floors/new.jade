@@ -1,0 +1,10 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  form(action='/floors', method='post', enctype='multipart/form-data')
+    input(type='text', name='name')
+    input(type='number', name='rate')
+    input(type='file', name='photo')
+    button Save

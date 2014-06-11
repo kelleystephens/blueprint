@@ -1,0 +1,14 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  form(action='/buildings', method='post')
+    input(type='text', name='name')
+    input(type='text', name='x')
+    input(type='text', name='y')
+    select(name='locationId')
+      option Select a Location
+      each location in locations
+        option(value=location._id)= location.name
+    button Create Building
