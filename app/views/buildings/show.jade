@@ -2,23 +2,23 @@ extends ../shared/template
 
 block content
   h1= title
-  h2 $#{rate.toFixed(2)}
+  h2#total $#{rate.toFixed(2)}
 
-  button#create-room Create Room
-  button#save-room Save Room
-  input#name(type='text')
-
+  label Step 1: Pick Your Floor
   select#floors
     option Select a Floor
     each floor in floors
       option(data-img=floor.photo, value=floor._id)= floor.name
+  label Step 2: Name Your Room
+  input#name(type='text')
+  label Step 3: Save Your Room
+  button#save-room Save Room
 
-  table#building(data-id=bldg._id.toString())
-    tbody
-      - for(var y=0; y < bldg.y; y++)
-          tr
-            - for(var x=0; x < bldg.x; x++)
-                td.cell(data-x=x, data-y=y)
+  #building(data-id=bldg._id.toString())
+    - for(var y=0; y < bldg.y; y++)
+      .row
+        - for(var x=0; x < bldg.x; x++)
+          .cell(data-x=x, data-y=y)
 
 block scripts
   script.

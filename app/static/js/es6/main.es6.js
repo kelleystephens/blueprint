@@ -9,7 +9,7 @@
   var begin, end;
 
   function init(){
-    $('#create-room').click(createRoom);
+    $('#floors').change(createRoom);
     $('#save-room').click(saveRoom);
     paintBuilding();
   }
@@ -35,8 +35,9 @@
       data: {name:name, beginX:begin.x, beginY:begin.y, endX:end.x, endY:end.y, floorId:floorId},
       dataType: 'json',
       success: data => {
-        console.log('here is the data');
-        console.log(data);
+        var cost = `$${data.cost.toFixed(2)}`;
+        $('#total').text(cost);
+        $('.cell').removeClass('temp').addClass('perm');
       }
     });
   }
